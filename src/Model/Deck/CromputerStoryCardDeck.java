@@ -1,3 +1,6 @@
+package Model.Deck;
+
+import Model.Card.CromputerStoryCard;
 
 public class CromputerStoryCardDeck extends Deck {
 

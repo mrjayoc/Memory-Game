@@ -1,6 +1,8 @@
+package Model.MemoryGame;
+import Model.Deck.CromputerStoryCardDeck;
 public class CromputerStoryMemoryGame extends MemoryGame {
 
-    CromputerStoryMemoryGame (int numberOfCardsToMatch, int sizeOfBoard) {
+    public CromputerStoryMemoryGame(int numberOfCardsToMatch, int sizeOfBoard) {
         super(numberOfCardsToMatch, sizeOfBoard);
     }
 
