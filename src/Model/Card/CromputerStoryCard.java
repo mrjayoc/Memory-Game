@@ -2,21 +2,19 @@ package Model.Card;
 import org.jetbrains.annotations.NotNull;
 
 public class CromputerStoryCard extends Card {
+    private CHARACTER_VALUES character;
 
-    public static final String[] CHARACTER_VALUES  = {"Cromptous", "Chromebook Default", "Chromebook Disgust", "Sap Man", "Denis", "Jimbulo Bimbulor", "Lance", "Victorian Gentleman","SD Card", "Colossus", "Denie", "D-Money", "Meat Salesman" };
-    private String character;
-
-    public CromputerStoryCard(String character) {
+    public CromputerStoryCard(CHARACTER_VALUES character) {
         this.character = character;
     }
 
-    public String getCharacter() {
+    public CHARACTER_VALUES getCharacter() {
         return this.character;
     }
 
     @Override
     public String toString() {
-        return character;
+        return character.toString();
     }
 
     @Override
@@ -29,9 +27,19 @@ public class CromputerStoryCard extends Card {
         }
     }
 
-    public int compareTo(@NotNull Card card) {
-        CromputerStoryCard cromputerStoryCard = (CromputerStoryCard) card;
-        return this.character.compareTo(cromputerStoryCard.getCharacter());
-    }
-
+    public enum CHARACTER_VALUES {
+        CROMPTOUS,
+        CHROMEBOOK_DEFAULT,
+        CHROMEBOOK_DISGUST,
+        SAP_MAN,
+        DENIS,
+        JIMBULO_BIMBULOR,
+        LANCE,
+        VICTORIAN_GENTLEMAN,
+        SD_CARD,
+        COLOSSUS,
+        DENIE,
+        D_MONEY,
+        MEAT_SALESMAN;
+        }
 }

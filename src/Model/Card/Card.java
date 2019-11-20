@@ -1,6 +1,6 @@
 package Model.Card;
 
-public abstract class Card implements Comparable<Card> {
+public abstract class Card {
 
     private boolean isFaceUp;
 
