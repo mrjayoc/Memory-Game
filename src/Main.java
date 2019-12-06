@@ -1,5 +1,6 @@
+/*
 import Model.Card.CromputerStoryCard;
-import Model.MemoryGame.CromputerStoryMemoryGame;
+import Model.MemoryGame.CromputerStoryMemoryGame.CromputerStoryMemoryGame;
 
 import java.util.Scanner;
 class Main {
@@ -16,4 +17,4 @@ class Main {
         System.out.println(message);
         return scanner.nextInt();
     }
-}
+}*/

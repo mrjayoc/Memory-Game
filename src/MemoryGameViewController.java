@@ -1,19 +1,16 @@
+import Model.MemoryGame.MemoryGame;
+
 import javax.swing.*;
-import java.awt.*;
 
 public class MemoryGameViewController {
-    private JPanel rootPanel;
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-        LayoutManager layoutManager = new GridLayout();
-        rootPanel.setLayout(layoutManager);
-    }
+    private MemoryGameView gameView;
+    private MemoryGame gameModel;
 
-    public static void main(String[] args) {
+    public MemoryGameViewController() {
         JFrame frame = new JFrame("MemoryGameViewController");
-        frame.setContentPane(new MemoryGameViewController().rootPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       // frame.setContentPane((new MemoryGameView()).rootPanel);
+        frame.setDefaultCloseOperation(3);
         frame.pack();
         frame.setVisible(true);
     }

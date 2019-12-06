@@ -11,7 +11,7 @@ public abstract class MemoryGame {
     private int numberOfCardsCurrentlyFlipped = 0;
     private Card[] gameBoard;
 
-    MemoryGame(int numberOfCardsToMatch, int sizeOfBoard) {
+    protected MemoryGame(int numberOfCardsToMatch, int sizeOfBoard) {
         /* Checking the arguments of the constructor to make sure they are valid
            We cannot have a matching game with less 2 cards to match, if the size of the board has less cards than
            the number of cards to match, or if the size of the board isn't a multiple of the number of cards we are going
@@ -35,7 +35,7 @@ public abstract class MemoryGame {
         }
     }
 
-    MemoryGame(int sizeOfBoard) {
+    protected MemoryGame(int sizeOfBoard) {
         this(2, sizeOfBoard);
     }
 

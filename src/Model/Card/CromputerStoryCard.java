@@ -1,5 +1,4 @@
 package Model.Card;
-import org.jetbrains.annotations.NotNull;
 
 public class CromputerStoryCard extends Card {
     private CHARACTER_VALUES character;
